@@ -16,6 +16,14 @@
         "rows": [ "F4", "F5", "F6", "F7", "B1", "B3", "B2", "B6" ],
         "cols": [ "D4", "C6", "D7", "E6", "B4", "B5" ]
     },
+    "features": {
+        "encoder": true
+    },
+    "encoder": {
+        "rotary": [
+            { "pin_a": "D0", "pin_b": "D1" }
+        ]
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [
@@ -71,7 +79,7 @@
                 {"label": "K72", "x": 9,    "y": 3.75,  "matrix": [7, 2]},
                 {"label": "K73", "x": 10,   "y": 3.75,  "matrix": [7, 3]},
                 
-                {"label": "K30", "x": 6.25, "y": 3.2,   "matrix": [3, 0]}
+                {"label": "K30", "x": 6.25, "y": 3.25,  "matrix": [3, 0]}
             ]
         }
     }

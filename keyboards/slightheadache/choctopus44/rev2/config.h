@@ -24,12 +24,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 6
 
-#define ENCODERS_PAD_A \
-    { D0 }
-#define ENCODERS_PAD_B \
-    { D1 }
-#define ENCODER_RESOLUTION 2 // 1 for linear encoder (detents/resolution)
-
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
