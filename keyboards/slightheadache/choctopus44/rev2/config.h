@@ -17,54 +17,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "config_common.h"
-
 /* VID: 0xfeed as is used in many other QMK boards */
 /* PID: USB Device descriptor parameter, as per https://github.com/obdev/v-usb/blob/master/usbdrv/USB-IDs-for-free.txt */
-#define VENDOR_ID 0xfeed
-#define PRODUCT_ID 0x05dc
-#define DEVICE_VER 0x0001
-#define MANUFACTURER "SlightHeadache / routa.keebs@gmail.com"
-#define PRODUCT Choctopus44
 
 /* key matrix size */
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 6
 
-/*
- * Keyboard Matrix Assignments
- *
- * Change this to how you wired your keyboard
- * COLS: AVR pins used for columns, left to right
- * ROWS: AVR pins used for rows, top to bottom
- * DIODE_DIRECTION: COL2ROW = COL = Anode (+), ROW = Cathode (-, marked on diode)
- *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
- *
- */
-#define MATRIX_ROW_PINS \
-    { F4, F5, F6, F7, B1, B3, B2, D2 }
-#define MATRIX_COL_PINS \
-    { D4, C6, D7, E6, B4, B5 }
-
-/* COL2ROW, ROW2COL*/
-#define DIODE_DIRECTION COL2ROW
-
-#define ENCODERS_PAD_A \
-    { D0 }
-#define ENCODERS_PAD_B \
-    { D1 }
-#define ENCODER_RESOLUTION 2 // 1 for linear encoder (detents/resolution)
-
-#define UNUSED_PINS \
-    { B6, D3 }
+#define ENCODER_RESOLUTION 2
 
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
 #define SOFT_SERIAL_PIN D3  // or D0, D1, D2, D3, E6
-
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
 
 /* define if matrix has ghost (lacks anti-ghosting diodes) */
 //#define MATRIX_HAS_GHOST
@@ -73,8 +38,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
-
-#define QMK_KEYS_PER_SCAN 4
 
 #define USB_POLLING_INTERVAL_MS 1
 
